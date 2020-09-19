@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style/ms_signUp.css">
+</head>
+
+<body>
+
+    <div id="wrap">
+
+        <header id="header">
+            <div id="logo">
+                <a href="index.html"><img src="images/LOGO_color_3.png" alt="logo" width="200"
+                        height="100"></a>
+            </div>
+            <div id="mainNav">
+                <div id="lnb">
+                    <ul>
+                        <li><a href="ms_signUpAgree.html" class="Eng">SING UP</a></li>
+                        <li><a href="ml_login.html" class="Eng">LOGIN</a></li>
+                        <li><a href="mm_MPL.html" class="Eng">MYPAGE</a></li>
+                    </ul>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li class="mainLi"><a href="#" class="Eng">VINTAGE FILM</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Vintage Film?</a></li>
+                                <li><a href="#" class="Eng">Movie List</a></li>
+                                <li><a href="#">위치안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">TICKET & SCHEDULE</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Movie Schedule</a></li>
+                                <li><a href="#">티켓 및 예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">COMMUNITY</a>
+                            <ul>
+                                <li><a href="nn_news.html" class="Eng">News</a></li>
+                                <li><a href="nr_reviews.html" class="Eng">Reviews</a></li>
+                                <li><a href="nq_qna.html" class="Eng">Q N A</a></li>
+                            </ul>
+                        </li>
+                        <li id="sns">
+                            <a href="https://www.facebook.com"><img src="images/i_facebook.png" alt="facebook"
+                                    width="20" height="20"></a>
+                            <a href="https://www.instagram.com/"><img src="images/i_instagram.png" alt="instagram"
+                                    width="20" height="20"></a>
+                            <a href="https://twitter.com/"><img src="images/i_Twitter.png" alt="Twitter" width="20"
+                                    height="20"></a>
+                            <a href="https://www.youtube.com/"><img src="images/i_Youtube.png" alt="Youtube" width="20"
+                                    height="20"></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- mainNav -->
+        </header>
+
+
+        <form>
+
+            <div id="memInfo">
+
+                <p>*필수입력사항</p>
+
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" placeholder="Name*" class="Eng memberInfo" id="userN">
+                            <span class="requirement"></span>
+                        </td>
+
+                        <td>
+                            <input type="text" placeholder="ID*" class="Eng memberInfo" id="userID">
+                            <span class="requirement"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="password" placeholder="Password*" class="Eng memberInfo" id="userPW">
+                            <span class="requirement"></span>
+                            <span class="discord"></span>
+                        </td>
+                        <td>
+                            <input type="password" placeholder="Password Check*" class="Eng memberInfo" id="userPWChk">
+                            <span class="requirement"></span>
+                            <span class="discord"></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <span class="Eng birthDate"> BirthDate</span>
+                            <div id="birth">
+                                <select name="birthYear" id="birthYear" class="Eng">
+                                </select>
+                                <select name="birthMonth" id="birthMonth" class="Eng">
+                                </select>
+                                <select name="birthDay" id="birthDay" class="Eng">
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <input type="text" placeholder="Phone Number*" class="Eng memberInfo" maxlength="11"
+                                id="userPH">
+                            <span class="requirement"></span>
+                            <button type="button">인증</button>
+                            <span id="msg"> 숫자만 입력하세요</span>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="2">
+                            <div id="email">
+                                <input type="text" placeholder="Email*" class="Eng" id="userE"> @ <input type="text"
+                                    class="Eng" id="emailAdress">
+                                <select name="Email" id="Email">
+                                    <option value="">선택하세요</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="kakao.com">kakao.com</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                    <option value="" id="etc">직접입력</option>
+                                </select>
+                                <span class="requirement"></span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="chkBox">
+                            <input type="checkbox" name="emailChk" id="emailChk">
+                            <span>이메일 수신 동의 <br>
+                                유익한 이벤트 소식을 이메일로 받으실 수 있습니다. (미동의시에도 회원 관련 안내 이메일은 발송됩니다)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="chkBox">
+                            <input type="checkbox" name="phoneChk" id="phoneChk">
+                            <span>문자 수신 동의 <br>
+                                유익한 이벤트 소식을 문자로 받으실 수 있습니다. (미동의시에도 회원 관련 안내 문자는 발송됩니다)</span>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <div id="footerBtn">
+                <button type="button" class="Eng btn" id="chkBtn">Sign Up</button>
+                <button type="reset" class="Eng btn">Reset</button>
+            </div>
+
+        </form>
+
+
+
+        <footer id="footer">
+            <div id="footerLogo">
+                <a href="index.html"><img src="images/LOGO_1.png" alt="logo" width="100" height="50"></a>
+            </div>
+
+
+
+            <div id="footerNav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="Eng">Vintage Film</a></li>
+                        <li><a href="#">영화시간표</a></li>
+                        <li><a href="#">티켓예매</a></li>
+                        <li><a href="nn_news.html" class="Eng">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="copyright" class="Eng">
+                &copy; VINTAGE FILM All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="library/jquery-3.4.1.js"></script>
+    <script src="script/ms_signUp.js"></script>
+
+</body>
+
+</html>

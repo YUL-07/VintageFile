@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Find PW</title>
+    <link rel="stylesheet" href="style/ml_findIDPW.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="logo">
+                <a href="index.html"><img src="images/LOGO_color_3.png" alt="logo" width="200"
+                        height="100"></a>
+            </div>
+            <div id="mainNav">
+                <div id="lnb">
+                    <ul>
+                        <li><a href="ms_signUpAgree.html" class="Eng">SING UP</a></li>
+                        <li><a href="ml_login.html" class="Eng">LOGIN</a></li>
+                        <li><a href="mm_MPL.html" class="Eng">MYPAGE</a></li>
+                    </ul>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li class="mainLi"><a href="#" class="Eng">VINTAGE FILM</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Vintage Film?</a></li>
+                                <li><a href="#" class="Eng">Movie List</a></li>
+                                <li><a href="#">위치안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">TICKET & SCHEDULE</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Movie Schedule</a></li>
+                                <li><a href="#">티켓 및 예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">COMMUNITY</a>
+                            <ul>
+                                <li><a href="nn_news.html" class="Eng">News</a></li>
+                                <li><a href="nr_reviews.html" class="Eng">Reviews</a></li>
+                                <li><a href="nq_qna.html" class="Eng">Q N A</a></li>
+                            </ul>
+                        </li>
+                        <li id="sns">
+                            <a href="https://www.facebook.com"><img src="images/i_facebook.png" alt="facebook"
+                                    width="20" height="20"></a>
+                            <a href="https://www.instagram.com/"><img src="images/i_instagram.png" alt="instagram"
+                                    width="20" height="20"></a>
+                            <a href="https://twitter.com/"><img src="images/i_Twitter.png" alt="Twitter" width="20"
+                                    height="20"></a>
+                            <a href="https://www.youtube.com/"><img src="images/i_Youtube.png" alt="Youtube" width="20"
+                                    height="20"></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- mainNav -->
+        </header>
+
+
+        <div id="main">
+            <form name="frm">
+
+                <div id="FindPW">
+                    <h2 class="Eng">FORGOTTEN PASSWORD?</h2>
+                    <div id="btnList">
+                        <button type="button" class="Eng tabOn" data-Link="PH">Phone Number</button>
+                        <button type="button" class="Eng" data-Link="email">Email</button>
+                    </div>
+
+                    <div id="PH" class="linkReset">
+                        <span class="Eng userId">ID</span>
+                        <input type="text" class="userID"> <br>
+                        <span class="Eng userNAME">Name</span>
+                        <input type="text" class="userName"> <br>
+                        <select id="agency" class="Eng">
+                            <option value="SKT">SKT</option>
+                            <option value="KT">KT</option>
+                            <option value="LGU">LGU+</option>
+                        </select>
+                        <input type="text" id="phoneN" placeholder="숫자만 입력해주세요" maxlength="11">
+                        <br> <button type="button" class="ok Eng">OK</button>
+                    </div>
+                    <div id="email" class="linkReset">
+                        <span class="Eng userId">ID</span>
+                        <input type="text" class="userID"> <br>
+                        <span class="Eng userNAME">Name</span>
+                        <input type="text" class="userName"> <br>
+                        <span class="Eng">Email</span>
+                        <input type="text" id="eAdress" placeholder="Email 주소를 입력해주세요">
+                        <br> <button type="button" class="ok Eng">OK</button>
+
+                    </div>
+                </div>
+
+                <p id="findIDPW"><a href="ml_findID.html" class="Eng">Find ID</a></p>
+            </form>
+        </div>
+
+
+        <footer id="footer">
+            <div id="footerLogo">
+                <a href="index.html"><img src="images/LOGO_1.png" alt="logo" width="100" height="50"></a>
+            </div>
+
+
+
+            <div id="footerNav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="Eng">Vintage Film</a></li>
+                        <li><a href="#">영화시간표</a></li>
+                        <li><a href="#">티켓예매</a></li>
+                        <li><a href="nn_news.html" class="Eng">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="copyright" class="Eng">
+                &copy; VINTAGE FILM All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <script src="library/jquery-3.4.1.js"></script>
+    <script src="script/ml_findIDPW.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Abhaya+Libre:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+/* reset 시작 */
+/* Login */
+
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.Eng{    
+    /* font-family: 'Abhaya Libre', serif; */
+    font-family: 'Marcellus', serif;
+}
+#wrap{
+    width: 1920px;
+    margin: 30px auto 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul{
+    list-style: none;
+}
+header, nav, address, main, 
+article, section, footer, aside {
+  display: block;
+}
+/* reset 끝 */
+
+
+
+/* header#header 시작 */
+
+header#header{
+    width: 1920px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+header#header>#logo{
+    width: 400px;
+    height: 100px;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+}
+/* #mainNav 시작----------- */
+#mainNav{
+    width: 1500px;
+    height: 100px;
+    float: right;    
+    text-align: center;
+}
+
+#lnb {
+    width: 1450px;
+    height: 40px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+#lnb>ul>li{
+    display: inline-block;
+    list-style: none;
+    width: 170px;
+    height: 40px;
+    padding: 5px 0;
+}
+#lnb>ul>li>a{
+    line-height: 20px;
+    font-size: 17px;    
+    color: #f17186;
+}
+#lnb>ul>li:hover>a{
+    font-weight: bold;
+}
+
+
+
+#gnb{
+    height: 60px;
+}
+#gnb>ul>li.mainLi{
+    display: block;
+    width: 280px;
+    float: left;
+    padding: 7px 0;
+}
+#gnb>ul>li.mainLi:hover{
+    border-bottom: 1px solid #f17186;
+}
+#gnb>ul>li.mainLi>a{
+    font-size: 24px;
+    line-height: 24px;
+}
+#gnb>ul>li.mainLi:hover>a{
+    color: #32409a;
+    font-weight: bold;
+}
+#gnb>ul>li.mainLi>ul{
+    height: 180px;
+    position: absolute;    
+    margin-top: 8px;
+    background-color: #fde1aa;
+    display: none;
+    z-index: 9;
+}
+#gnb>ul>li.mainLi>ul>li{
+    width: 280px;
+    padding: 15px 0;
+}
+#gnb>ul>li.mainLi>ul>li:hover>a{
+    color: #f17186;
+    font-weight: bold;
+}
+#gnb>ul>li.mainLi>ul>li>a{
+    font-size: 17px;
+}
+
+li#sns{
+    width: 350px;
+    height: 60px;
+    padding-top: 10px;
+    float: right;
+}
+li#sns img{
+    margin: 0 20px;
+}
+/* #mainNav 끝----------- */
+
+/* header#header 끝 */
+
+
+
+
+
+
+
+
+
+div#main {
+    width: 700px;
+    height: 650px;
+    margin: 70px auto;
+    padding: 50px 0;
+}
+div#main #pageName{
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+}
+div#userID, div#userPW {
+    width: 700px;
+    height: 80px;
+    padding-top: 10px;
+    margin: 10px auto;
+}
+div#userID>span.msg , 
+div#userPW>span.msg{
+    width: 40px;
+    font-size: 14px;
+    color: #f00;
+    position: absolute;
+    margin-left: -60px;
+    margin-top: 20px;
+    display: none;
+    z-index: 99;
+}
+span.common {
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-left: 10px;
+}
+
+div#main input[type=text], div#main input[type=password] {
+    width: 400px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 5px;
+    border: 2px solid #fde1aa;
+}
+
+div#addMsg {
+    width: 400px;
+    margin: 10px auto;
+    text-align: right;
+}
+
+div#addMsg>span{
+    display: inline-block;
+    padding-left: 10px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+div#addMsg>span>a {
+    font-size: 14px;
+    font-weight: bold;
+}
+div#btnGroup{
+    width: 700px;
+    height: 60px;
+    margin: 50px auto 0;
+    text-align: center;
+}
+div#btnGroup input{
+    width: 250px;
+    height: 50px;
+    margin: 10px 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fde1aa;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+div#btnGroup input:hover {
+    background-color: #fde1aa;
+    color: #f17186;
+}
+
+
+
+
+
+
+
+
+
+/* footer#footer 시작 */
+
+footer#footer {
+    width: 1920px;
+    height: 100px;
+    font-size: 14px;
+    margin: 50px auto 0;
+    background-color: #ededed;
+}
+
+footer#footer>#footerLogo {
+    float: left;
+    width: 420px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+footer#footer>#footerNav {
+    float: right;
+    vertical-align: top;
+    width: 1480px;
+    height: 40px;
+    text-align: center;
+}
+
+#footerNav>nav>ul>li {
+    display: inline-block;
+    padding-top: 15px;
+    width: 320px;
+}
+
+#footerNav>nav>ul>li:hover>a {
+    color: #f17186;
+    font-weight: bold;
+}
+
+footer#footer>#copyright {
+    width: 1920px;
+    clear: both;
+    text-align: center;
+}
+
+/* footer#footer 끝 */

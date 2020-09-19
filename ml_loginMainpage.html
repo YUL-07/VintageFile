@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main Page Login</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div id="logo">
+                <a href="#"><img src="images/LOGO_color_3.png" alt="logo" width="200" height="100"></a>
+            </div>
+            <div id="mainNav">
+                <div id="lnb">
+                    <ul>
+                        <li><a href="ms_signUpAgree.html" class="Eng">SING UP</a></li>
+                        <li><a href="index.html" class="Eng">LOGOUT</a></li>
+                        <li><a href="mm_MPL.html" class="Eng">MYPAGE</a></li>
+                    </ul>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li class="mainLi"><a href="#" class="Eng">VINTAGE FILM</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Vintage Film?</a></li>
+                                <li><a href="#" class="Eng">Movie List</a></li>
+                                <li><a href="#">위치안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">TICKET & SCHEDULE</a>
+                            <ul>
+                                <li><a href="#" class="Eng">Movie Schedule</a></li>
+                                <li><a href="#">티켓 및 예매안내</a></li>
+                            </ul>
+                        </li>
+                        <li class="mainLi"><a href="#" class="Eng">COMMUNITY</a>
+                            <ul>
+                                <li><a href="nn_news.html" class="Eng">News</a></li>
+                                <li><a href="nr_reviews.html" class="Eng">Reviews</a></li>
+                                <li><a href="nq_qna.html" class="Eng">Q N A</a></li>
+                            </ul>
+                        </li>
+                        <li id="sns">
+                            <a href="https://www.facebook.com"><img src="images/i_facebook.png" alt="facebook" width="20" height="20"></a>
+                            <a href="https://www.instagram.com/"><img src="images/i_instagram.png" alt="instagram" width="20" height="20"></a>
+                            <a href="https://twitter.com/"><img src="images/i_Twitter.png" alt="Twitter" width="20" height="20"></a>
+                            <a href="https://www.youtube.com/"><img src="images/i_Youtube.png" alt="Youtube" width="20" height="20"></a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <!-- mainNav -->
+        </header>
+
+
+        <div id="slide">
+            <div id="slideShow">
+                <a href="#">
+                    <img src="images/S_breakfast_at_tiffanys.jpg" alt="breakfastAtTiffanys" width="1920" height="600">
+                    <img src="images/S_wizard_of_oz.jpg" alt="wizard_of_oz" width="1920" height="600">
+                    <img src="images/S_RomanHoliday.jpg" alt="RomanHoliday" width="1920" height="600">
+                    <img src="images/S_RomeoAndJuliet.jpg" alt="RomeoAndJuliet" width="1920" height="600">
+                </a>
+            </div>
+            <!-- slideShow -->
+        </div>
+        <!-- slide -->
+
+
+       
+        <div id="slidePosters">
+
+            <div id="posters">
+
+                <ul>
+                    <li>
+                        <div class="slidePoster" data-Link="Tiffany">
+                            <a href="#"><img src="images/P_Breakfast_At_Tiffany's.jpg" alt="breakfastAtTiffanys"
+                                    width="300" height="380"></a>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slidePoster" data-Link="RomanHoliday">
+                            <a href="#"><img src="images/P_RomanHolidayPoster.jpg" alt="RomanHoliday" width="300"
+                                    height="380"></a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="slidePoster" data-Link="SoundOfMusic">
+                            <a href="#"><img src="images/P_The_Sound_Of_Music.jpg" alt="The_Sound_Of_Music" width="300"
+                                    height="380"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slidePoster" data-Link="Juliet">
+                            <a href="#"><img src="images/P_RomeoAndJuliet.jpg" alt="RomeoAndJuliet" width="300"
+                                    height="380"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slidePoster" data-Link="Oz">
+                            <a href="#"><img src="images/P_TheWizardOfOz.jpg" alt="TheWizardOfOz" width="300"
+                                    height="380"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="slidePoster" data-Link="GoneWind">
+                            <a href="#"><img src="images/P_gone_with_the_wind.png" alt="gone_with_the_wind" width="300"
+                                    height="380"></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+                <div class="slideBtn" id="prevBtn">
+                    <p id="leftBtn"><i class='fas fa-angle-left' style='font-size:60px'></i></p>
+                </div>
+
+                <div class="slideBtn" id="nextBtn">
+                    <p id="rightBtn"><i class='fas fa-angle-right' style='font-size:60px'></i></p>
+                </div>
+
+            </div>
+            <!-- posters -->
+
+            <p id="resWidth"></p>
+            <p id="resLen"></p>
+        </div>
+        <!-- slidePosters -->
+
+
+        <div id="notice">
+            <div id="tabArea">
+                <div id="tab">
+                    <button type="button" data-Link="news" class="tabOn Eng">News</button>
+                    <button type="button" data-Link="reviews" class="Eng">Reviews</button>
+                </div>
+                <!-- tab -->
+
+
+                <div id="news" class="linkReset tblAlign">
+                    <table>
+                        <tr>
+                            <td><a href="nn_newsSave.html">영어자막 미제공 영화 안내</a></td>
+                            <td><a href="nn_news.html" class="Eng">Vintage Film</a></td>
+                            <td><a href="nn_news.html" class="Eng">19.11.14</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#nn_news.html">페스티벌 북 변경 사항 안내</a></td>
+                            <td><a href="nn_news.html" class="Eng">Vintage Film</a></td>
+                            <td><a href="nn_news.html" class="Eng">19.11.05</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="nn_news.html">프로그램 이벤트 일정 및 게스트 안내</a></td>
+                            <td><a href="nn_news.html" class="Eng">Vintage Film</a></td>
+                            <td><a href="nn_news.html" class="Eng">19.10.30</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><a href="nn_news.html" class="Eng">+MORE</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="reviews" class="linkReset tblAlign">
+                    <table>
+                        <tr>
+                            <td><a href="nw_writeSave.html" class="Eng">Breakfast At Tiffany's</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">IU</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">19.11.15</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="nr_reviews.html" class="Eng">The Sound Of Music</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">TaeYeon</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">19.11.15</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="nr_reviews.html" class="Eng">Roman Holiday</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">ChungHa</a></td>
+                            <td><a href="nr_reviews.html" class="Eng">19.11.14</a></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><a href="nr_reviews.html" class="Eng">+MORE</a></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <!-- tabArea -->
+        </div>
+        <!-- notice -->
+
+        <footer id="footer">
+            <div id="footerLogo">
+                <a href="#"><img src="images/LOGO_1.png" alt="logo" width="100" height="50"></a>
+            </div>
+
+
+
+            <div id="footerNav">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="Eng">Vintage Film</a></li>
+                        <li><a href="#">영화시간표</a></li>
+                        <li><a href="#">티켓예매</a></li>
+                        <li><a href="nn_news.html" class="Eng">News</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="copyright" class="Eng">
+                &copy; VINTAGE FILM All rights reserved.
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <div class="posterInfo" id="Tiffany">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_Breakfast_At_Tiffany's.jpg" alt="breakfastAtTiffanys" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <P>티파니에서 아침을 Breakfast At Tiffany's, 1961</P>
+                <P>감독 : 블레이크 에드워즈</P>
+                <P>출연 : 오드리 헵번 (홀리), 조지 페파드 (폴) 등</P>
+                <P>줄거리 : <br>
+                    뉴욕 맨하탄의 새벽 거리, 한 여인이 택시에서 내린다. 소매가 치렁한 이브닝 드레스, 얼굴을 반이나 가린 검은 안경. 그녀는 티파니
+                    보석상을 활보하며 흥미로운 눈빛으로 보석을 바라본다. 한 손에 빵을 들고, 우아한 몸짓으로 새벽거리를 리드미컬하게 걸어가는 그녀의 이름은 홀리,
+                    사실 그녀는 택사스 농부의 아내로 어떻게 그녀가 맨하탄에 정착했는지 알 수 없다.가난한 작가인 폴은 홀리의 이웃으로 같은 아파트에 살고 있다.
+                    그는 부자인 여인의 후원을 받으며 곤욕스러운 애인 노릇을 하던 중, 귀엽고 매력적인 홀리에게 점차 호감을 갖게 된다. 마음에도 없는 중년 남자가
+                    귀찮게 군다며 한밤 중에 폴의 침대 속으로 들어가 아무렇지도 않게 그의 팔에 안겨 잠드는 그녀의 모습에서, 길잃은 고양이를 귀여워하고 무료함을
+                    이기지 못해 아파트 비상 계단에서 기타를 치며 "Moon River"를 흥얼거리는 모습에서, 폴은 홀리를 더욱 사랑하게 된다.
+                </P>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+    <div class="posterInfo" id="RomanHoliday">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_RomanHolidayPoster.jpg" alt="RomanHoliday" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <P>로마의 휴일 Roman Holiday, 1953</P>
+                <P>감독 : 윌리엄 와일러</P>
+                <P>출연 : 오드리 헵번 (앤 공주), 그레고리 펙 (조 브래들리) 등</P>
+                <P>줄거리 : 왕실의 딱딱한 제약과 정해진 스케줄에 피곤해 지고 싫증난 앤 공주는 거리로 뛰쳐나가 잠들었다가 어느 신사를 만난다. 그와 함께
+                    아이스크림도 맛나게 먹고 신나게 스쿠터를 타고 다니면서 서민의 즐거운 생활을 맛 본 앤 공주는 신사와의 고별식이 다가오자 무척이나 아쉬워한다.
+                    한편 거리에서 벤치에 잠든 여인을 만난 그 신사는 특종을 찾는 신문기자였다. 그저 불쌍한 여인인 줄 알았던 아가씨가 앤 공주임을 알아챈 기자는
+                    굴러들어온 특종감을 만났으니 신나기 그지없었다. 아무 것도 모르는 앤 공주는 신사가 이끄는 대로 로마 거리를 즐겁게 따라다니면서 헤프닝을 벌여서
+                    그야말로 특종 사진감이 되어준다. 친절하고 온건한 신사 죠에게 어느새 정이 든 앤 공주, 그리고 자신의 특종을 위해서 열심히 뛴 죠 기자도
+                    이렇게 너무나 순순한 앤 공주에게 이끌리는 마음은 어쩔 수가 없었다. 그래서 특종을 목표로 찍었던 사진들을 보도하지 않기로 결심하고, 기자회견
+                    석상에서 아무렇지도 않게 앤에게 건네준다.
+                </P>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+    <div class="posterInfo" id="SoundOfMusic">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_The_Sound_Of_Music.jpg" alt="The_Sound_Of_Music" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <P>사운드 오브 뮤직 The Sound Of Music, 1965</P>
+                <P>감독 : 로버트 와이즈</P>
+                <P>출연 : 졸리 앤드류스 (마리아), 크리스토퍼 플러머 (캡틴 조지 본 트랩), 엘레노 파커 (남작 부인)등</P>
+                <P>줄거리 : 알프스에서 들려오는 환상의 하모니! 세상에서 가장 사랑스러운 합창이 시작된다! 음악을 사랑하는 말괄량이 견습 수녀 ‘마리아’는 원장
+                    수녀의 권유로 해군 명문 집안 폰 트랩가의 가정교사가 된다. ‘마리아’는 좀처럼 마음의 문을 열지 않는 폰 트랩가의 일곱 아이들에게 노래를
+                    가르치며 점차 교감하게 되고, 엄격한 ‘폰 트랩 대령’ 역시 마음의 문을 열게 된다. 그러던 어느 날, ‘마리아’는 자신이 ‘폰 트랩 대령’을
+                    사랑하고 있다는 사실을 깨닫게 되고, 자신만의 비밀을 간직한 채 아이들의 곁을 떠나 다시 수녀원에 들어가기로 결심하는데…
+                </P>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+
+    <div class="posterInfo" id="Juliet">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_RomeoAndJuliet.jpg" alt="RomeoAndJuliet" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <p>로미오와 줄리엣 Romeo And Juliet, 1968</p>
+                <p>감독 : 프랑코 제페렐리</p>
+                <p>출연 : 레너드 위팅 (로미오), 올리비아 핫세 (줄리엣), 존 메어너리 등</p>
+                <p>줄거리 : 비슷한 품위의 두 집안은 이 이야기가 전개되는 아름다운 '베로나'에서 오래전의 원한이 새로운 문제를 야기하는, 예의바른 사람들의 피가
+                    예의바른 사람들의 손을 더럽게 한다. 이 두 적의 자식들에 이어서 두 운명에 꼬인 두 연인은 자신의 생명을 빼앗아 그들 부모의 분쟁을 묻게
+                    한다. 몬태그가와 캐플렛가는 원수지간으로 항상 분쟁이 그칠 날이 없었다. 캐플렛가의 축제에 참가한 몬태그가의 로미오와 줄리엣은 첫눈에 사랑에
+                    빠진다. 로미오와 줄리엣은 집안 몰래 결혼식을 올린다. 사소한 언쟁으로 시작된 다툼에서 로미오는 캐플렛가의 티볼트를 죽이고 타향으로 달아난다.
+                    거짓으로 장례를 치른 후 로미오를 찾아갈 결심을 한 줄리엣은 약을 먹고 가사 상태에 빠진다. 마침 줄리엣이 그리워 몰래귀향한 로미오는 줄리엣이
+                    진짜 죽은 줄 알고 자살을 하고, 깨어난 줄리엣은 로미오가 자살한 것을 보고 따라죽는다. 다음날 현장을 발견한 양가는 후회하며 화해한다.
+                </p>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+
+    <div class="posterInfo" id="Oz">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_TheWizardOfOz.jpg" alt="TheWizardOfOz" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <p>감독 : 빅터 플레밍</p>
+                <p>출연 : 주디 갈라드 (도로시 게일), 프랭크 모건 (오즈의 마법사 / 마벨교수), 레이 볼거 (허수아비/ 헝크) 등</p>
+                <p>줄거리 : 회오리 바람에 휩쓸려 오즈의 나라로 내던져진 도로시는 집으로 되돌아갈 수 있는 유일한 길이 위대한 오즈의 마법사를 만나는 것임을 알고
+                    그를 찾아 긴 여정이 시작된다. 도로시는 애견 토토와 함께 노란 길을 따라 오즈의 마법사가 사는 에메랄드 시티로 향한다. 도중에 만난 세 명의
+                    친구들, 지능을 얻고자 하는 허수아비와 심장을 원하는 양철 나뭇꾼, 용기를 가지고 싶어하는 겁장이 사자와 함께 오즈의 마법사에게 자신의 소원이
+                    이루어지도록 부탁하기 위해 도로시와 함께 경쾌한 발걸음을 옮긴다. 그러나 도로시 일행을 방해하기 위해 뒤쫓아오는 서쪽 나라 마녀의 검은 그림자.
+                </p>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+    <div class="posterInfo" id="GoneWind">
+        <div class="posterTblRow">
+            <div class="pstImg">
+                <img src="images/P_gone_with_the_wind.png" alt="gone_with_the_wind" width="650" height="900">
+            </div>
+            <div class="pstInfo">
+                <P>바람과 함께 사라지다 Gone With The Wind, 1939</P>
+                <P>감독 : 빅터 플레밍</P>
+                <P>출연 : 클락 게이블 (렛 버틀러), 비비안 리 (스칼렛 오하라), 레슬리 하워드(애슐리 윌키스) 등</P>
+                <P>줄거리 : 대농장 타라를 소유한 오하라 가문의 장녀 스칼렛은 이웃에 사는 청년 애슐리를 사모해왔다. 그러나 애슐리가 친구 멜라니와 결혼한다는
+                    이야기를 듣게 된 스칼렛은 뒤늦게 사랑을 고백하지만 거절당하는데, 무역으로 많은 돈을 번 레트 선장이 이 모습을 숨어서 지켜보고 있었다. 그무렵
+                    남북전쟁이 발발하고, 전장으로 떠나며 멜라니를 부탁하는 애슐리에게 질투심이 생긴 스칼렛은 멜라니의 오빠 찰스의 청혼을 받아들여 결혼한다. 하지만
+                    찰스는 전장에서 병으로 사망하고 어린 나이에 과부가 된 스칼렛은 애틀랜타로 가서 멜라니의 가족들과 지내게 된다.전황은 남군에게 불리해지고
+                    애틀랜타도 북군에 포위된다. 피난을 떠나야 하지만 멜라니는 출산을 앞두고 있었고, 애슐리의 부탁대로 스칼렛은 그녀의 출산을 돕는다. 아기는
+                    무사히 낳았지만 북군의 포격이 애틀랜타를 뒤덮은 상황. 스칼렛은 레트에게 도움을 청해 불길을 뚫고 구사일생으로 타라까지 피신한다. 하지만 북군이
+                    휩쓸고 간 타라는 황무지로 변해 있었다.
+                </P>
+                <span class="closeBtn">닫기</span>
+            </div>
+        </div>
+        <!-- posterTblRow -->
+    </div>
+    <!-- posterInfo -->
+
+
+    <script src="library/jquery-3.4.1.js"></script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
